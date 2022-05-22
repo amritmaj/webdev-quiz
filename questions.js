@@ -1,13 +1,13 @@
 export const questions = [
-{
+  {
     q: "What is C in CSS?",
     a: "Cascading",
-},
-{
+  },
+  {
     q: "The browser applies the feature of a tag until it encounters_________tag?",
     a: "Closing",
-},
-{
+  },
+  {
     q: "What is the general syntax for inline image?",
     a: "img src=file",
   },
@@ -60,7 +60,7 @@ export const questions = [
 
   {
     q: ` In the following line of code, what we will call the "datatype" written in brackets -
-    article[datatype]=assignment_value`,
+article[datatype]=assignment_value`,
     a: "String",
   },
 
@@ -79,6 +79,39 @@ export const questions = [
     a: "navbar-inverse",
   },
 
+  {
+    q: "The class 'xs' in Bootstrap is used for what type of device ___",
+    a: "phones",
+  },
 
+  {
+    q: "Flask is a web development framework created in ___",
+    a: "Python",
+  },
+
+  {
+    q: "The __ decorator in Flask is used to bind URL to a function.",
+    a: "route()",
+  },
+
+  {
+    q: "Which function takes up the floating point number as argument?",
+    a: "revision()",
+  },
+
+  {
+    q: "___ jQuery method can be used to deal with the name conflicts",
+    a: "noConflict()",
+  },
+
+  {
+    q: "___ jQuery method is used to attach a handler to an event.",
+    a: "bind()",
+  },
+
+  {
+    q: "___ jQuery method used to remove the set of matched elements",
+    a: "remove()",
+  },
 
 ];

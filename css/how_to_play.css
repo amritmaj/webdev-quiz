@@ -4,14 +4,12 @@
 }
 
 .home_container{
-  
-    height: 100vh;
-   
-    width: 100vw;
+    height: auto;
+    width: 100%;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     background-position: center;
     background-size: cover;
-    
+    overflow: hidden;
     flex-wrap: wrap;
 }
 
@@ -22,7 +20,9 @@
    
   }
 
-
+.common_width img {
+  width: 100px;
+}
 
   h1 {
     font-size: 70px;
@@ -58,7 +58,7 @@
 
   @media screen and (min-width: 601px) {
     .main_part p {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
   
