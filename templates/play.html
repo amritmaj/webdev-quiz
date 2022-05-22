@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/play.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/play.css') }}" />
     <title>Play Game</title>
   </head>
   <body>
     <section class="home_container">
         <nav class="navbar navbar-expand-lg navbar-light common_width">
-          <a class="navbar-brand" href="/html/index.html">
-            <img src="/img/logo (2).png" alt=""
+          <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='img/logo_2.png') }}" alt=""
           /></a>
   
           <p class="time">59</p>
@@ -72,7 +72,7 @@
         </section>
       </section>
 
-      <script src="/js/questions.js"></script>
-     <script src="/js/game_logic.js" type="module"></script>
+      <script src="{{ url_for('static', filename='js/questions.js')}}"></script>
+      <script src="{{ url_for('static', filename='js/game_logic.js')}}" type="module"></script>
   </body>
 </html>
