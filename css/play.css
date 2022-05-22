@@ -6,13 +6,13 @@
     color: white;
     font-size: 25px;
     background-color: #009bfe;
-
-    width: 85px; 
-    height: 85px;
+    width: 50px; 
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 
 }
 
@@ -38,12 +38,14 @@
     font-size: 30px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
   }
 
   .body_area .game_area .input_boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 
   .body_area .game_area .input_boxes input {
