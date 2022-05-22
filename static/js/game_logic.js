@@ -6,6 +6,7 @@ const scoreVar = document.querySelector(".score span");
 let score = 0;
 let TimerValue = 59;
 let answer = "";
+let randomNumber = Math.floor(Math.random() * 24);
 
 const HandleKeyBoard = (e) => {
   let Value = e.target.value;
@@ -13,7 +14,7 @@ const HandleKeyBoard = (e) => {
 
   if (Value == "ok") {
     answer = answer.trim().toLowerCase();
-    let correctanswer = questions[score].a.trim().toLowerCase();
+    let correctanswer = questions[randomNumber].a.trim().toLowerCase();
 
     correctanswer = correctanswer.replace(/ /g, "");
     console.log(answer);
@@ -23,7 +24,8 @@ const HandleKeyBoard = (e) => {
       scoreVar.textContent = score;
       answer = "";
       input_boxes.innerHTML = "";
-      questionVar.textContent = questions[score].q;
+      randomNumber = Math.floor(Math.random() * 24);
+      questionVar.textContent = questions[randomNumber].q;
       TimerValue = 59;
     } else {
       window.alert(`Game Over Your Score Is ${score}`);
@@ -31,7 +33,8 @@ const HandleKeyBoard = (e) => {
       scoreVar.textContent = "";
       answer = "";
       input_boxes.innerHTML = "";
-      questionVar.textContent = questions[score].q;
+      randomNumber = Math.floor(Math.random() * 24);
+      questionVar.textContent = questions[randomNumber].q;
     }
   } else if (Value == "<") {
     console.log(answer);
@@ -54,7 +57,7 @@ key_board.forEach((EachKey) => {
   EachKey.addEventListener("click", HandleKeyBoard);
 });
 
-questionVar.textContent = questions[score].q;
+questionVar.textContent = questions[randomNumber].q;
 
 function timeFunction() {
   let Timer = document.querySelector(".time");

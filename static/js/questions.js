@@ -3,31 +3,37 @@ export const questions = [
     q: "What is C in CSS?",
     a: "Cascading",
   },
+
   {
     q: "The browser applies the feature of a tag until it encounters_________tag?",
     a: "Closing",
   },
+  
   {
     q: "What is the general syntax for inline image?",
     a: "img src=file",
   },
+  
   {
     q: "Tag for inline frame is _________",
     a: "Iframe",
   },
+  
   {
     q: "JavaScript is an ___________ language",
     a: "Object-Oriented",
   },
+  
   {
     q: "How can a datatype be declared to be a constant type?",
     a: "const",
   },
+  
   {
     q: "What is the output of the following code snippet - print(NaN === NaN)?",
     a: "false",
   },
-
+  
   {
     q: "Which function is used to serialize an object into a JSON string in Javascript?",
     a: "stringify()",
@@ -59,8 +65,7 @@ export const questions = [
   },
 
   {
-    q: ` In the following line of code, what we will call the "datatype" written in brackets -
-article[datatype]=assignment_value`,
+    q: ` In the following line of code, what we will call the "datatype" written in brackets - article[datatype]=assignment_value`,
     a: "String",
   },
 
