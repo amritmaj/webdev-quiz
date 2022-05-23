@@ -8,33 +8,72 @@ let TimerValue = 59;
 let answer = "";
 let randomNumber = Math.floor(Math.random() * 24);
 
+
+let Timer = document.querySelector(".time");
+// let done = false;
+let TimeInterval = setInterval(() => {
+  Timer.textContent = TimerValue;
+  if (TimerValue == 0) {
+    // TimerValue = 0;
+    // done = true;
+    // SubmitData(score);
+    clearInterval(TimeInterval);
+    window.alert(`Game Over Your Score Is ${score}`);
+    window.location.replace('http://127.0.0.1:5000');
+  } else {
+    TimerValue--;
+  }
+}, 1000);
+
+
 const HandleKeyBoard = (e) => {
   let Value = e.target.value;
   let input_boxes = document.querySelector(".input_boxes");
 
   if (Value == "ok") {
+    
     answer = answer.trim().toLowerCase();
     let correctanswer = questions[randomNumber].a.trim().toLowerCase();
-
     correctanswer = correctanswer.replace(/ /g, "");
+    
     console.log(answer);
     console.log(correctanswer);
+
     if (answer == correctanswer) {
+
+      //reset timer
+      clearInterval(TimeInterval);
+      TimerValue = 0;
+
+      TimerValue = 59;
+      TimeInterval = setInterval(() => {
+        Timer.textContent = TimerValue;
+        if (TimerValue == 0) {
+          clearInterval(TimeInterval);
+          window.alert(`Game Over Your Score Is ${score}`);
+          window.location.replace('http://127.0.0.1:5000');
+        } else {
+          TimerValue--;
+        }
+      }, 1000);
+
       score++;
       scoreVar.textContent = score;
       answer = "";
       input_boxes.innerHTML = "";
       randomNumber = Math.floor(Math.random() * 24);
       questionVar.textContent = questions[randomNumber].q;
-      TimerValue = 59;
+      // TimerValue = 59;
     } else {
       window.alert(`Game Over Your Score Is ${score}`);
-      score = 0;
-      scoreVar.textContent = "";
-      answer = "";
-      input_boxes.innerHTML = "";
-      randomNumber = Math.floor(Math.random() * 24);
-      questionVar.textContent = questions[randomNumber].q;
+      window.location.replace('http://127.0.0.1:5000');
+    //   score = 0;
+    //   TimerValue=0
+    //   scoreVar.textContent = "";
+    //   answer = "";
+    //   input_boxes.innerHTML = "";
+    //   randomNumber = Math.floor(Math.random() * 24);
+    //   questionVar.textContent = questions[randomNumber].q;
     }
   } else if (Value == "<") {
     console.log(answer);
@@ -59,18 +98,7 @@ key_board.forEach((EachKey) => {
 
 questionVar.textContent = questions[randomNumber].q;
 
-function timeFunction() {
-  let Timer = document.querySelector(".time");
-
-  let TimeIneteval = setInterval(() => {
-    Timer.textContent = TimerValue;
-    if (TimerValue == 0) {
-      TimerValue = 0;
-    } else {
-      TimerValue--;
-    }
-  }, 1000);
-}
+function timeFunction() {}
 window.addEventListener("load", (e) => {
   timeFunction();
 });
