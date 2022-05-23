@@ -1,29 +1,30 @@
 # webdev-quiz
 CITS5503 Project 2
 
-<br>#< quizDev ><br>
-<br>
-This is a quiz application for Web Development Concepts to help individuals brush their knowledge. It goes through some of the basic concepts related to HTML, CSS, JavaScript, jQuery and Bootstrap<br>
+#< quizDev >
 
-<br>#Features<br>
+**This is a quiz application for Web Development Concepts to help individuals brush their knowledge. It goes through some of the basic concepts related to HTML, CSS, JavaScript, jQuery and Bootstrap**
 <br>
-- Includes a qwerty keypad
-- Includes a game timer that ticks on from 60 secs
-- Displays Score on top right 
 
-<br>#Things to be included in the game in future<br>
+#FEATURES
+
+- **A game area of 500px width and full view height canvas**
+- **Includes a qwerty keypad**
+- **Includes a game timer that ticks on from 60 secs**
+- **Displays Score on top right**
 <br>
-- User Authentication
-- Share result in social media
-- Show high scores
 
+#IN-GAME FEATURES TO BE INCLUDED IN FUTURE STAGE
 
-HOW TO RUN<br>
+- **User Authentication**
+- **Share result in social media**
+- **Show high scores**
 <br>
-<br>install flask if not available:<br>
+
+#HOW TO RUN THE WEB APP
+install flask if not available:
 - **python -m pip install --upgrade pip**
 - **python -m pip install flask**
-<br>
-<br>To run the webapp:<br>
--**python -m flash run**
 
+To run the webapp:
+- **python -m flash run**
