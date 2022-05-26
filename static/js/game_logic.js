@@ -19,7 +19,7 @@ let TimeInterval = setInterval(() => {
     // SubmitData(score);
     clearInterval(TimeInterval);
     window.alert(`Game Over Your Score Is ${score}`);
-    window.location.replace('http://127.0.0.1:5000');
+    window.location.replace('http://127.0.0.1:5000/share/score/');
   } else {
     TimerValue--;
   }
@@ -51,7 +51,7 @@ const HandleKeyBoard = (e) => {
         if (TimerValue == 0) {
           clearInterval(TimeInterval);
           window.alert(`Game Over Your Score Is ${score}`);
-          window.location.replace('http://127.0.0.1:5000');
+          window.location.replace('http://127.0.0.1:5000/share/score/');
         } else {
           TimerValue--;
         }
@@ -66,7 +66,7 @@ const HandleKeyBoard = (e) => {
       // TimerValue = 59;
     } else {
       window.alert(`Game Over Your Score Is ${score}`);
-      window.location.replace('http://127.0.0.1:5000');
+      window.location.replace('http://127.0.0.1:5000/share/score/');
     //   score = 0;
     //   TimerValue=0
     //   scoreVar.textContent = "";

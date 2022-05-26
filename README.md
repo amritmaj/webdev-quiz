@@ -28,3 +28,9 @@ install flask if not available:
 
 To run the webapp:
 - **python -m flash run**
+
+<!-- SETTING UP THE Social Media Sharing -->
+# FB
+1. change static data-href url and replace it with domain
+# Whatsapp
+1. change the staic text with dynamic data
